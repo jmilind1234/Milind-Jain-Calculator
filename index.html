@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="../Calculator Project/calculator.css">
+</head>
+<body onload="changeAgainAndAgain()">
+    <div id="calculator_body">
+        <div id="name">
+            CALCULATOR
+        </div>
+        <div id="result_panel">
+        </div>
+        <div id="control_pad">
+            <button class="keys" id="AC" onclick="clearResultPanel()" onmousedown="changeBtnClr(this)" onmouseup="changebackBtnClr(this)">AC</button>
+            <button class="keys" id="left_parenthesis" onclick="writeleft_parenthesis()" onmousedown="changeBtnClr(this)" onmouseup="changebackBtnClr(this)">(</button>
+            <button class="keys" id="right_parenthesis" onclick="writeright_parenthesis()" onmousedown="changeBtnClr(this)" onmouseup="changebackBtnClr(this)">)</button>
+            <button class="keys" id="plus" onclick="writeAddition()" onmousedown="changeBtnClr(this)" onmouseup="changebackBtnClr(this)">+</button>
+            <button class="keys" id="seven" onclick="seven()" onmousedown="changeBtnClr(this)" onmouseup="changebackBtnClr(this)">7</button>
+            <button class="keys" id="eight" onclick="eight()" onmousedown="changeBtnClr(this)" onmouseup="changebackBtnClr(this)">8</button>
+            <button class="keys" id="nine" onclick="nine()" onmousedown="changeBtnClr(this)" onmouseup="changebackBtnClr(this)">9</button>
+            <button class="keys" id="minus" onclick="writeSubtraction()" onmousedown="changeBtnClr(this)" onmouseup="changebackBtnClr(this)">-</button>
+            <button class="keys" id="four" onclick="four()" onmousedown="changeBtnClr(this)" onmouseup="changebackBtnClr(this)">4</button>
+            <button class="keys" id="five" onclick="five()" onmousedown="changeBtnClr(this)" onmouseup="changebackBtnClr(this)">5</button>
+            <button class="keys" id="six" onclick="six()" onmousedown="changeBtnClr(this)" onmouseup="changebackBtnClr(this)">6</button>
+            <button class="keys" id="multiply" onclick="writeMultiplication()" onmousedown="changeBtnClr(this)" onmouseup="changebackBtnClr(this)">*</button>
+            <button class="keys" id="one" onclick="one()" onmousedown="changeBtnClr(this)" onmouseup="changebackBtnClr(this)">1</button>
+            <button class="keys" id="two" onclick="two()" onmousedown="changeBtnClr(this)" onmouseup="changebackBtnClr(this)">2</button>
+            <button class="keys" id="three" onclick="three()" onmousedown="changeBtnClr(this)" onmouseup="changebackBtnClr(this)">3</button>
+            <button class="keys" id="divide" onclick="writeDivision()" onmousedown="changeBtnClr(this)" onmouseup="changebackBtnClr(this)">/</button>
+            <button class="keys" id="zero" onclick="zero()" onmousedown="changeBtnClr(this)" onmouseup="changebackBtnClr(this)">0</button>
+            <button class="keys" id="point" onclick="point()" onmousedown="changeBtnClr(this)" onmouseup="changebackBtnClr(this)">.</button>
+            <button class="keys" id="modulus" onclick="writeModulus()" onmousedown="changeBtnClr(this)" onmouseup="changebackBtnClr(this)">%</button>
+            <button class="keys" id="calculate" onclick="calculateExpression()" onmousedown="changeBtnClr(this)" onmouseup="changebackBtnClr(this)">=</button>
+        </div>
+    </div>
+    <script src="../Calculator Project/calculator.js"></script>
+</body>
+</html>
